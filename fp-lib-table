@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name GPIO-USB-Switch)(type KiCad)(uri /home/ccdeveloper/workspaces/KiCad/GPIO-USB-Switch/GPIO-USB-Switch)(options "")(descr ""))
+  (lib (name GPIO-USB-Switch)(type KiCad)(uri /home/ccdeveloper/workspaces/KiCad/GPIO-USB-Switch/)(options "")(descr ""))
   (lib (name USB3_Wuerth_Horizontal)(type Eagle)(uri ${KIPRJMOD}/USB3_Wuerth_Horizontal.lbr)(options "")(descr ""))
 )

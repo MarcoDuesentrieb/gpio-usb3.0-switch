@@ -46,17 +46,6 @@ F 3 "~" H 4650 2400 50  0001 C CNN
 	1    4650 2400
 	0    -1   1    0   
 $EndComp
-$Comp
-L Transistor_FET:BSS138 Q1
-U 1 1 60635E6E
-P 3100 3200
-F 0 "Q1" H 3300 3250 50  0000 L CNN
-F 1 "BSS138" H 3300 3150 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 3125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3100 3200 50  0001 L CNN
-	1    3100 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4000 2800 4000 2700
 Wire Wire Line
@@ -227,8 +216,8 @@ L Device:LED D3
 U 1 1 6063284A
 P 3600 3600
 F 0 "D3" H 3600 3800 50  0000 R CNN
-F 1 "LED" H 3650 3700 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3600 3600 50  0001 C CNN
+F 1 "LED_Green" H 3650 3700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3600 3600 50  0001 C CNN
 F 3 "~" H 3600 3600 50  0001 C CNN
 	1    3600 3600
 	1    0    0    -1  
@@ -266,27 +255,14 @@ L Device:LED D2
 U 1 1 6063B8EC
 P 3050 2550
 F 0 "D2" H 3050 2800 50  0000 R CNN
-F 1 "LED" H 3050 2700 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3050 2550 50  0001 C CNN
+F 1 "LED_Red" H 3050 2700 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3050 2550 50  0001 C CNN
 F 3 "~" H 3050 2550 50  0001 C CNN
 	1    3050 2550
 	1    0    0    -1  
 $EndComp
 Text GLabel 2500 2550 0    50   Input ~ 0
 GND
-$Comp
-L Device:D D1
-U 1 1 6064ACF0
-P 2750 2550
-F 0 "D1" H 2750 2767 50  0000 C CNN
-F 1 "D" H 2750 2676 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2750 2550 50  0001 C CNN
-F 3 "~" H 2750 2550 50  0001 C CNN
-	1    2750 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 2550 2500 2550
 Wire Wire Line
 	5050 2600 5050 3450
 Wire Wire Line
@@ -305,4 +281,19 @@ Wire Wire Line
 	4850 2600 4850 3450
 Wire Wire Line
 	4950 2600 4950 3450
+$Comp
+L Transistor_FET:2N7002 Q1
+U 1 1 609D6A8D
+P 3100 3200
+F 0 "Q1" H 3304 3246 50  0000 L CNN
+F 1 "2N7002" H 3304 3155 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3300 3125 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 3100 3200 50  0001 L CNN
+	1    3100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2550 2900 2550
+Text HLabel 5050 2600 2    50   Input ~ 0
+Ground2
 $EndSCHEMATC
